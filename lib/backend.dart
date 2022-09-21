@@ -7,5 +7,6 @@ Future<Handler> starShelfModular() async {
   final handler = Modular(module: AppModule(), middlewares: [
     logRequests(),
   ]);
+
   return handler;
 }
